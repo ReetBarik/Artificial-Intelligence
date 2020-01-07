@@ -1,0 +1,21 @@
+@relation havefun
+
+
+@attribute weather {clear, cloudy, rain}
+@attribute aidone {yes, no}
+@attribute costume {yes, no}
+@attribute havefun {yes, no}
+
+
+@data
+clear,yes,yes,yes
+clear,yes,no,yes
+clear,no,yes,yes
+clear,no,no,no
+cloudy,yes,yes,yes
+cloudy,no,yes,no
+cloudy,no,no,no
+rain,yes,yes,yes
+rain,yes,no,yes
+rain,no,yes,no
+rain,no,no,no

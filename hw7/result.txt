@@ -1,0 +1,120 @@
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: None
+INFO     translator memory limit: None
+INFO     translator command line string: /home/reetb/anaconda3/bin/python /home/reetb/Desktop/fast-downward-19.06/builds/release/bin/translate/translate.py domain.pddl prob.pddl --sas-file output.sas
+Parsing...
+Parsing: [0.000s CPU, 0.001s wall-clock]
+Normalizing task... [0.000s CPU, 0.000s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.000s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.000s CPU, 0.001s wall-clock]
+Preparing model... [0.000s CPU, 0.000s wall-clock]
+Generated 7 rules.
+Computing model... [0.000s CPU, 0.000s wall-clock]
+15 relevant atoms
+0 auxiliary atoms
+15 final queue length
+16 total queue pushes
+Completing instantiation... [0.000s CPU, 0.000s wall-clock]
+Instantiating: [0.000s CPU, 0.001s wall-clock]
+Computing fact groups...
+Finding invariants...
+4 initial candidates
+Finding invariants: [0.000s CPU, 0.000s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.000s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+2 uncovered facts
+Choosing groups: [0.000s CPU, 0.000s wall-clock]
+Building translation key... [0.000s CPU, 0.000s wall-clock]
+Computing fact groups: [0.000s CPU, 0.001s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.000s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [0.000s CPU, 0.000s wall-clock]
+Translating task: [0.000s CPU, 0.000s wall-clock]
+0 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+0 axioms removed
+1 propositions removed
+Detecting unreachable propositions: [0.000s CPU, 0.000s wall-clock]
+Reordering and filtering variables...
+3 of 3 variables necessary.
+0 of 1 mutex groups necessary.
+4 of 4 operators necessary.
+0 of 0 axiom rules necessary.
+Reordering and filtering variables: [0.000s CPU, 0.000s wall-clock]
+Translator variables: 3
+Translator derived variables: 0
+Translator facts: 6
+Translator goal facts: 2
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 4
+Translator axioms: 0
+Translator task size: 25
+Translator peak memory: 45396 KB
+Writing output... [0.000s CPU, 0.000s wall-clock]
+Done! [0.000s CPU, 0.003s wall-clock]
+translate exit code: 0
+
+INFO     Running search (release).
+INFO     search stdin: output.sas
+INFO     search time limit: None
+INFO     search memory limit: None
+INFO     search command line string: /home/reetb/Desktop/fast-downward-19.06/builds/release/bin/downward --search 'astar(blind())' --internal-plan-file sas_plan < output.sas
+reading input... [t=2.1059e-05s]
+done reading input! [t=9.0198e-05s]
+Initializing blind search heuristic...
+Building successor generator...done! [t=0.000970783s]
+peak memory difference for successor generator creation: 0 KB
+time for successor generation creation: 7.097e-06s
+Variables: 3
+FactPairs: 6
+Bytes per state: 4
+Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+New best heuristic value for blind: 1
+[g=0, 1 evaluated, 0 expanded, t=0.00110189s, 22160 KB]
+f = 1 [1 evaluated, 0 expanded, t=0.00113411s, 22160 KB]
+Initial heuristic value for blind: 1
+pruning method: none
+f = 2 [3 evaluated, 1 expanded, t=0.00117542s, 22160 KB]
+f = 3 [5 evaluated, 3 expanded, t=0.00121802s, 22160 KB]
+New best heuristic value for blind: 0
+[g=3, 7 evaluated, 5 expanded, t=0.00124073s, 22160 KB]
+Solution found!
+Actual search time: 0.000103061s [t=0.00127192s]
+suck a (1)
+right  (1)
+suck b (1)
+Plan length: 3 step(s).
+Plan cost: 3
+Expanded 6 state(s).
+Reopened 0 state(s).
+Evaluated 7 state(s).
+Evaluations: 7
+Generated 8 state(s).
+Dead ends: 0 state(s).
+Expanded until last jump: 3 state(s).
+Reopened until last jump: 0 state(s).
+Evaluated until last jump: 5 state(s).
+Generated until last jump: 5 state(s).
+Number of registered states: 7
+Int hash set load factor: 7/8 = 0.875
+Int hash set resizes: 3
+Search time: 0.000213083s
+Total time: 0.0012746s
+Solution found.
+Peak memory: 22160 KB
+Remove intermediate file output.sas
+search exit code: 0
+
